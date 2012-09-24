@@ -47,249 +47,46 @@ echo "<ul style='list-style:none; display:block; margin:10px 0; height:20px;'>";
     }
 echo "</ul>";
 $page = (int)$_GET['page'];
-if ($_GET['page']==1) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 2 && $counter < 15) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}
-} elseif ($_GET['page']==2) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 14 && $counter < 27) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==3) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 26 && $counter < 39) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==4) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 38 && $counter < 51) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==5) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 50 && $counter < 63) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==6) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 62 && $counter < 75) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==7) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 74 && $counter < 87) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==8) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 86 && $counter < 99) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==9) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 98 && $counter < 111) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==10) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 110 && $counter < 123) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==11) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 122 && $counter < 135) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==12) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 134 && $counter < 147) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==13) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 146 && $counter < 159) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==14) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 158 && $counter < 171) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==15) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 170 && $counter < 183) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==16) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 182 && $counter < 205) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==17) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 204 && $counter < 217) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==18) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 216 && $counter < 229) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==19) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 228 && $counter < 241) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==20) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 240 && $counter < 253) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} elseif ($_GET['page']==21) {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 252 && $counter < 265) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}	
-} else {
-	if ($thumbs = opendir('travel-photos/images-haiti')) {
-		$pix = opendir('travel-photos/images-haiti');
-    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-        	$counter++;		
-        	if ($counter > 2 && $counter < 15) {
-        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
-			}
-    	}
-    	closedir($thumbs);
-	}
+
+function makeGallery ($pageNum,$countLow,$countHigh) {
+  if ($_GET['page']==$pageNum) {
+  	if ($thumbs = opendir('travel-photos/images-haiti')) {
+  		$pix = opendir('travel-photos/images-haiti');
+      	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
+          	$counter++;		
+          	if ($counter > $countLow && $counter < $countHigh) {
+          		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
+  			    }
+      	}
+      	closedir($thumbs);
+      	echo "<br />counter is " . $counter . "<br />";
+  	}
+  } 
 }
+
+makeGallery (1,2,15);
+makeGallery (2,14,27);
+makeGallery (3,26,39);
+makeGallery (4,38,51);
+makeGallery (5,50,63);
+makeGallery (6,62,75);
+makeGallery (7,74,87);
+makeGallery (8,86,99);
+makeGallery (9,98,111);
+makeGallery (10,110,123);
+makeGallery (11,122,135);
+makeGallery (12,134,147);
+makeGallery (13,146,159);
+makeGallery (14,158,171);
+makeGallery (15,170,183);
+makeGallery (16,182,195);
+makeGallery (17,194,207);
+makeGallery (18,206,219);
+makeGallery (19,218,231);
+makeGallery (20,230,243);
+makeGallery (21,242,255);
+makeGallery (22,254,267);
+
 echo "<ul style='list-style:none; display:inline;'>";
 	for ($pagenumber = 1; $pagenumber < 22; $pagenumber ++) {
 		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
