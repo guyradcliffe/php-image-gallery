@@ -278,6 +278,17 @@ if ($_GET['page']==1) {
     	}
     	closedir($thumbs);
 	}	
+} else {
+	if ($thumbs = opendir('travel-photos/images-haiti')) {
+		$pix = opendir('travel-photos/images-haiti');
+    	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
+        	$counter++;		
+        	if ($counter > 2 && $counter < 15) {
+        		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
+			}
+    	}
+    	closedir($thumbs);
+	}
 }
 echo "<ul style='list-style:none; display:inline;'>";
 	for ($pagenumber = 1; $pagenumber < 22; $pagenumber ++) {
