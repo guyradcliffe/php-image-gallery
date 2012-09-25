@@ -42,26 +42,33 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <?php
 echo "<ul style='list-style:none; display:block; margin:10px 0; height:20px;'>";
-	for ($pagenumber = 1; $pagenumber < 23; $pagenumber ++) {
-		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
+	for ($pagenumber = 1; $pagenumber < 22; $pagenumber ++) {
+		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos2.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
     }
 echo "</ul>";
 $page = (int)$_GET['page'];
+$counter = "";
 
 function makeGallery ($pageNum,$countLow,$countHigh) {
   if ($_GET['page']==$pageNum) {
   	if ($thumbs = opendir('travel-photos/images-haiti')) {
   		$pix = opendir('travel-photos/images-haiti');
       	while (false !== ($thumbnail = readdir($thumbs)) && false !== ($pic = readdir($pix))) {
-            global $counter;
-          	$counter++;		
+          	$counter++;	
           	if ($counter > $countLow && $counter < $countHigh) {
-          		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title=''><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
+          		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title='";
+          		include ("captions.php");
+              foreach ($captionarray as $key => $caption) {
+                if ($key === $counter) {
+                  echo $caption;
+                  }
+              }
+              echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
   			    }
       	}
       	closedir($thumbs);
   	}
-  }
+  } 
 }
 
 makeGallery (1,2,15);
@@ -87,13 +94,9 @@ makeGallery (20,230,243);
 makeGallery (21,242,255);
 makeGallery (22,254,267);
 
-echo "<br />counter is: " . $counter . "<br />";
-$countertotal = ceil(($counter / 12)+1);
-echo $countertotal . "<br />";
-
 echo "<ul style='list-style:none; display:inline;'>";
-	for ($pagenumber = 1; $pagenumber < 23; $pagenumber ++) {
-		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
+	for ($pagenumber = 1; $pagenumber < 22; $pagenumber ++) {
+		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos2.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
     }
 echo "</ul>";
 
