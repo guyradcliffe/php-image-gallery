@@ -58,13 +58,21 @@ function makeGallery ($pageNum,$countLow,$countHigh) {
           	if ($counter > $countLow && $counter < $countHigh) {
           		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title='";
           		//add caption to each photo 
-          		include ("captions.php");
+          		include ("pre-earthquake-haiti-photos-captions.php");
               foreach ($captionarray as $key => $caption) {
                 if ($key === $counter) {
                   echo $caption;
                   }
               }
-              echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' alt='Alt text' /></a>\n";
+              echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' alt='";
+              //add caption to each photo 
+          		include ("pre-earthquake-haiti-photos-alt-tags.php");
+              foreach ($alttagsarray as $key => $alttag) {
+                if ($key === $counter) {
+                  echo $alttag;
+                  }
+              }
+              echo "' /></a>\n";
   			    }
       	}
       	closedir($thumbs);

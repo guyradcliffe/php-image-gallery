@@ -5,7 +5,6 @@ $captionarray = array(
 '',
 'Ginette Sylvain on her wedding day December 2002.',
 'Ginette Sylvain at Champs de Mars next to a tap tap.',
-'Killing a pig',
 'From the Balcony of Detente Tropical Hotel in La Plaine, Haiti',
 'From the Balcony of Detente Tropical Hotel in La Plaine, Haiti',
 'From the Balcony of Detente Tropical Hotel in La Plaine, Haiti',
