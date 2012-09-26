@@ -43,7 +43,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <?php
 echo "<ul style='list-style:none; display:block; margin:10px 0; height:20px;'>";
 	for ($pagenumber = 1; $pagenumber < 22; $pagenumber ++) {
-		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos2.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
+		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
     }
 echo "</ul>";
 $page = (int)$_GET['page'];
@@ -64,7 +64,7 @@ function makeGallery ($pageNum,$countLow,$countHigh) {
                   echo $caption;
                   }
               }
-              echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' alt='' /></a>\n";
+              echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' alt='Alt text' /></a>\n";
   			    }
       	}
       	closedir($thumbs);
@@ -97,7 +97,7 @@ makeGallery (22,254,267);
 
 echo "<ul style='list-style:none; display:inline;'>";
 	for ($pagenumber = 1; $pagenumber < 22; $pagenumber ++) {
-		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos2.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
+		echo "<li style='display:inline; margin-right:15px;'><a href='pre-earthquake-haiti-photos.php?page=" . $pagenumber . "'>" .  $pagenumber . "</a></li>";
     }
 echo "</ul>";
 
