@@ -57,13 +57,14 @@ function makeGallery ($pageNum,$countLow,$countHigh) {
           	$counter++;	
           	if ($counter > $countLow && $counter < $countHigh) {
           		echo "<a href='travel-photos/images-haiti/" . $pic . "' rel='prettyPhoto[haiti]' title='";
+          		//add caption to each photo 
           		include ("captions.php");
               foreach ($captionarray as $key => $caption) {
                 if ($key === $counter) {
                   echo $caption;
                   }
               }
-              echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' /></a>\n";
+              echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' alt='' /></a>\n";
   			    }
       	}
       	closedir($thumbs);
