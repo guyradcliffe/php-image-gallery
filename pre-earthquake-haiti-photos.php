@@ -65,7 +65,7 @@ function makeGallery ($pageNum,$countLow,$countHigh) {
                   }
               }
               echo "'><img src='travel-photos/images-haiti/" . $thumbnail . "' style='width:150px; margin:0 20px 15px 0;' alt='";
-              //add caption to each photo 
+              //add alt tag to each photo 
           		include ("pre-earthquake-haiti-photos-alt-tags.php");
               foreach ($alttagsarray as $key => $alttag) {
                 if ($key === $counter) {
